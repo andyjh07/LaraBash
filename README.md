@@ -18,7 +18,7 @@ In your terminal you need to do the following `$ nano ~/.bash_profile`. When thi
         echo "Magically creating a new Laravel project: $project..."
     
         cd /Applications/MAMP/htdocs || return 1    
-        laravel new "$project"
+        composer create-project --prefer-dist laravel/laravel "$project"
         cd "$project" || return 1
     
         git init
